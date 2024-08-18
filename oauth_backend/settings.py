@@ -63,6 +63,7 @@ INSTALLED_APPS = [
     "dj_rest_auth.registration",
     # allauth providers
     "allauth.socialaccount.providers.github",
+    "allauth.socialaccount.providers.google",
     # spectacular
     "drf_spectacular",
 ]
@@ -105,13 +106,16 @@ SOCIALACCOUNT_PROVIDERS = {
         "APP": {
             "client_id": config("GITHUB_CLIENT_ID"),
             "secret": config("GITHUB_CLIENT_SECRET"),
-            "key": config("GITHUB_CLIENT_KEY"),
             "redirect_uri": config("GITHUB_CALLBACK_URL"),
         },
-        "AUTH_PARAMS": {"scope": "user:email"},
-        "FIELDS": {"LOGIN": "email"},
-        "PROFILE_FIELDS": ["email", "name", "profile_picture", "url"],
-    }
+    },
+    "google": {
+        "APP": {
+            "client_id": config("GOOGLE_CLIENT_ID"),
+            "secret": config("GOOGLE_CLIENT_SECRET"),
+            "redirect_uri": config("GOOGLE_CALLBACK_URL"),
+        },
+    },
 }
 
 ROOT_URLCONF = "oauth_backend.urls"
