@@ -26,12 +26,12 @@ pip install -r requirements.txt
 
 ### Criar .env com variáveis de ambiente 
 ```
-- **`GITHUB_CLIENT_ID`**
-- **`GITHUB_CLIENT_SECRET`**
-- **`GITHUB_CALLBACK_URL`**
-- **`GOOGLE_CLIENT_ID`**
-- **`GOOGLE_CLIENT_SECRET`**
-- **`GOOGLE_CALLBACK_URL`**
+GITHUB_CLIENT_ID
+GITHUB_CLIENT_SECRET
+GITHUB_CALLBACK_URL
+GOOGLE_CLIENT_ID
+GOOGLE_CLIENT_SECRET
+GOOGLE_CALLBACK_URL
 ```
 
 ### Aplicar migrações 
