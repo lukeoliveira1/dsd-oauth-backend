@@ -1,30 +1,30 @@
 # OAuth Backend
 
-Este projeto é uma API Django Rest Framework que fornece autenticação OAuth utilizando GitHub e Google. <br/>
-Integrada com o repositório **getmovies-nextjs** vai oferecer uma solução completa de autenticação e autorização.
+This project is a Django Rest Framework API that provides OAuth authentication using GitHub and Google. <br/>
+Integrated with the **getmovies-nextjs** repository, it will offer a complete solution for authentication and authorization.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-- **Django Rest Framework (DRF)**: Framework para criação de APIs RESTful.
-- **dj-rest-auth**: Biblioteca para autenticação e gerenciamento de sessões.
-- **django-allauth**: Sistema de autenticação de terceiros para Django.
-- **djangorestframework-simplejwt**: Implementação de JWT (JSON Web Token) para autenticação.
-- **drf-spectacular**: Gerador de esquemas OpenAPI para DRF.
+- **Django Rest Framework (DRF)**: Framework for creating RESTful APIs.
+- **dj-rest-auth**: Library for authentication and session management.
+- **django-allauth**: Third-party authentication system for Django.
+- **djangorestframework-simplejwt**: JWT (JSON Web Token) implementation for authentication.
+- **drf-spectacular**: OpenAPI schema generator for DRF.
 
-## Configurações
+## Setup
 
-### Criar e Ativar um Ambiente Virtual
+### Create and Activate a Virtual Environment
 ```
 python -m venv venv
-source venv/bin/activate  # No Windows, use `venv\Scripts\activate`
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
 
-### Instalar as Dependências
+### Install Dependencies
 ```
 pip install -r requirements.txt
 ```
 
-### Criar .env com variáveis de ambiente 
+### Create .env with Environment Variables
 ```
 GITHUB_CLIENT_ID
 GITHUB_CLIENT_SECRET
@@ -34,12 +34,12 @@ GOOGLE_CLIENT_SECRET
 GOOGLE_CALLBACK_URL
 ```
 
-### Aplicar migrações 
+### Apply Migrations
 ```
 python manage.py migrate
 ```
 
-### Criar superusuário 
+### Create a Superuser
 ```
 python manage.py createsuperuser
 ```
