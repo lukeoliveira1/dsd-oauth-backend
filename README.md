@@ -1,6 +1,6 @@
 # OAuth Backend
 
-Este projeto é uma API Django Rest Framework que fornece autenticação OAuth utilizando GitHub e Google.
+Este projeto é uma API Django Rest Framework que fornece autenticação OAuth utilizando GitHub e Google. <br/>
 Integrada com o repositório **getmovies-nextjs** vai oferecer uma solução completa de autenticação e autorização.
 
 ## Tecnologias Utilizadas
